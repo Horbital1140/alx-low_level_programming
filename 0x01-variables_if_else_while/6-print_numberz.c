@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - a program that print single number
- * Require: 0 (success)
+ * Return: 0 (success)
  */
 int main(void)
 {
