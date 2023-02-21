@@ -3,16 +3,17 @@
 /**
  * main - alphabet in lowercase lettee
  *
- * Return: 0
+ * Return: void
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	char c;
+	char letter = 'a';
 
-	for (c = 'a'; c <= 'z', c++)
+	while (letter <= 'z')
 	{
-		_putchar(c)
+		_putchar(letter);
+		letter++;
 	}
 	_putchar('\n');
 	return (0);
