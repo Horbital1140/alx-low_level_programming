@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * main - alphabet in lowercase lettee
+ * print_alphabet - print alphabet
  *
  * Return: void
- */
+*/
 
 void print_alphabet(void)
 {
@@ -16,5 +16,4 @@ void print_alphabet(void)
 		letter++;
 	}
 	_putchar('\n');
-	return (0);
 }
