@@ -19,10 +19,10 @@ unsigned int binary_to_uint(const char *b)
 	while (b[check] != '\0')
 	{
 		if (b[check] == '0')
-			output = 1;
+			output <<= 1;
 		else if (b[check] == '1')
 		{
-			output = 1;
+			output <<= 1;
 			output |= 1;
 		}
 		else
