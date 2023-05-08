@@ -15,26 +15,26 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t a;
 	ssize_t b;
 	ssize_t c;
-	char *butter;
+	char *buffer;
 
 	if (filename == NULL)
 		return (0);
 
-	butter = malloc(sizeof(char) * letters);
-	if (butter == NULL)
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
 		return (0);
 
 	a = open(filename, O_RDONLY);
-	b = read(a, butter, letters);
-	c = write(STDOUT_FILENO, butter, b);
+	b = read(a, buffer, letters);
+	c = write(STDOUT_FILENO, buffer, b);
 
 	if (a == -1 || b == -1 || c == -1 || c != b)
 	{
-		free(butter);
+		free(buffer);
 		return (0);
 	}
 
-	free(butter);
+	free(buffer);
 	close(a);
 
 	return (c);
